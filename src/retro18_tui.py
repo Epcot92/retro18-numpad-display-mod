@@ -84,7 +84,7 @@ def load_triggers() -> list[dict[str, str]]:
         except Exception:
             pass
     return [
-        {"name": "Greeting", "text": "HELLO NIKO", "mode": "1x"},
+        {"name": "Greeting", "text": "HELLO WORLD", "mode": "1x"},
         {"name": "Focus Mode", "text": "DEEP WORK DO NOT DISTURB", "mode": "2x"},
         {"name": "Market Check", "text": "CHECK DIS FUN SPY VOO VXX RCL NVDA KO", "mode": "3x"},
         {"name": "Coffee Break", "text": "COFFEE", "mode": "static"},
@@ -110,7 +110,7 @@ def send_daemon_json(payload: dict) -> bool:
 
 class Retro18TuiApp:
     def __init__(self) -> None:
-        self.input_text = "HELLO NIKO"
+        self.input_text = "HELLO WORLD"
         self.scroll_idx = 1  # Default: Scroll 1x
         self.triggers = load_triggers()
         self.selected_trigger = 0

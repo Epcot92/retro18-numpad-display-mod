@@ -218,7 +218,7 @@ impl App {
             trigger_state.select(Some(0));
         }
         Self {
-            input_text: String::from("HELLO NIKO"),
+            input_text: String::from("HELLO WORLD"),
             scroll_mode: ScrollMode::Once,
             triggers,
             trigger_state,
@@ -241,7 +241,7 @@ impl App {
         vec![
             TextTrigger {
                 name: "Greeting".into(),
-                text: "HELLO NIKO".into(),
+                text: "HELLO WORLD".into(),
                 mode: ScrollMode::Once,
             },
             TextTrigger {

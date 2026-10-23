@@ -40,7 +40,7 @@ class TestRetro18Display(unittest.TestCase):
 
     def test_tui_preview_and_triggers(self) -> None:
         app = Retro18TuiApp()
-        app.input_text = "HELLO NIKO"
+        app.input_text = "HELLO WORLD"
         preview = app.compute_preview_9()
         self.assertEqual(len(preview), 9)
         top, mid, bot = render_digit_lines(0x7F)  # '8'
@@ -53,7 +53,7 @@ class TestRetro18Display(unittest.TestCase):
         self.assertEqual(item, "NVDA 142.50")
         btc = format_ticker_item("BTC-USD", 95123.4)
         self.assertEqual(btc, "BTC 95123")
-        frames = generate_scroll_frames("HELLO NIKO", pad_lead=9, pad_trail=9)
+        frames = generate_scroll_frames("HELLO WORLD", pad_lead=9, pad_trail=9)
         self.assertGreater(len(frames), 18)
         self.assertTrue(all(len(f) == 9 for f in frames))
         # First and last frames should be all blank (0x00 * 9)

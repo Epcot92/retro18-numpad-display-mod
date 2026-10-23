@@ -21,7 +21,7 @@ Turns the stock 9-digit 7-segment LED screen into an active, multi-mode smart di
 - **System Resource Monitor**: Live CPU% and RAM% (`C 18 r 45`).
 - **Priority Notification API**: Push instant scrolling messages from any script or terminal over local UDP:
   ```powershell
-  python src/retro18_display.py notify "HELLO NIKO"
+  python src/retro18_display.py notify "HELLO WORLD"
   ```
 - **Firmware Patch & Flasher**:
   - Injects a 64-byte vendor USB command (`0x81 0xD0`) at Flash `0x21200`

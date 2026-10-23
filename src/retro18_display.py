@@ -670,7 +670,7 @@ def run_interactive_daemon(
         "      5. YouTube Music Live Synced Lyrics (Word/Phrase Punch-In)\n"
         "      6. Display Off (Stealth)\n"
         "  * Push a priority scrolling alert anytime from any terminal:\n"
-        '      python src/retro18_display.py notify "HELLO NIKO"\n'
+        '      python src/retro18_display.py notify "HELLO WORLD"\n'
         "  * Press [CAL] anytime to use the built-in standalone calculator.",
         flush=True,
     )
