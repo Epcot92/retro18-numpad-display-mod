@@ -1,5 +1,7 @@
 # 8BitDo Retro 18 Mechanical Numpad Display Hack & Mod
 
+*THIS IS A FIRMWARE LEVEL HACK. AS-IS/NO WARRANTY. THIS COULD POSSIBLY VOID YOUR WARRANTY*
+
 Reverse engineering, custom firmware injection, and multi-mode host display driver for the **8BitDo Retro 18 Mechanical Numpad** (`USB\VID_2DC8&PID_5203`).
 
 Turns the stock 9-digit 7-segment LED screen into an active, multi-mode smart display with an interactive TUI studio, live lyrics sync, stock tickers, and hardware button intercepting.
@@ -79,4 +81,4 @@ python src/retro18_display.py tui
 ---
 
 ## License
-MIT
+Apache 2.0
