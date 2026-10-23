@@ -1,0 +1,37 @@
+# Byte-compiled / optimized / ambient
+__pycache__/
+*.py[cod]
+*$py.class
+*.pyd
+
+# Environments & Local Data
+.env
+.venv/
+env/
+venv/
+.lyrics_cache/
+triggers.json
+
+# Rust build artifacts
+target/
+**/target/
+Cargo.lock
+
+# Operating System & Editors
+.DS_Store
+Thumbs.db
+desktop.ini
+.vscode/
+.idea/
+
+# Extracted proprietary binaries & reverse-engineering decomp dumps
+# (Keep source code and build/patch scripts; do not commit vendor OEM binaries)
+extracted_assemblies/*.dll
+extracted_assemblies/*.json
+extracted_assemblies/*.dat
+extracted_assemblies/*.bin
+extracted_assemblies/
+
+# Local agents cache / skills lock
+.agents/
+skills-lock.json
