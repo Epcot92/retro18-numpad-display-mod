@@ -1,5 +1,7 @@
 @echo off
 setlocal
+chcp 65001 >nul
+set PYTHONIOENCODING=utf-8
 cd /d "%~dp0.."
 
 REM If Rust / Cargo is installed, use the native Ratatui crate; otherwise run the instant zero-dependency TUI Studio

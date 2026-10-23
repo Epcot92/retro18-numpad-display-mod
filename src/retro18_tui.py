@@ -18,6 +18,13 @@ import socket
 import sys
 import time
 
+if hasattr(sys.stdout, 'reconfigure'):
+    try:
+        sys.stdout.reconfigure(encoding='utf-8')
+        sys.stderr.reconfigure(encoding='utf-8')
+    except Exception:
+        pass
+
 sys.path.insert(0, str(pathlib.Path(__file__).resolve().parent))
 from retro18_display import DEFAULT_TICKERS, NOTIFY_UDP_PORT, encode_7seg_sequence, encode_7seg_text
 
